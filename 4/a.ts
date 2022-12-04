@@ -22,7 +22,9 @@ fs.readFile('input.txt', 'utf8', function (err: any, data: any) {
         } else if (range1Start >= range2Start && range1End <= range2End) {
             console.log(`${range1Start}-${range1End}`, `${range2Start}-${range2End}`);
             overlapCount++;
-        } else if (range1Start >= range2Start && range1Start <= range2End) {
+        } 
+        // second part solution
+        else if (range1Start >= range2Start && range1Start <= range2End) {
             console.log(`${range1Start}-${range1End}`, `${range2Start}-${range2End}`);
             overlapCount++;
         } else if (range1End >= range2Start && range1End <= range2End) {
